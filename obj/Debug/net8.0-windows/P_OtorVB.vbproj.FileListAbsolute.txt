@@ -1,0 +1,14 @@
+G:\sanad\sources\P_OtorVB\obj\Debug\net8.0-windows\P_OtorVB.GeneratedMSBuildEditorConfig.editorconfig
+G:\sanad\sources\P_OtorVB\obj\Debug\net8.0-windows\P_OtorVB.AssemblyInfoInputs.cache
+G:\sanad\sources\P_OtorVB\obj\Debug\net8.0-windows\P_OtorVB.AssemblyInfo.vb
+G:\sanad\sources\P_OtorVB\obj\Debug\net8.0-windows\P_OtorVB.vbproj.CoreCompileInputs.cache
+G:\sanad\sources\P_OtorVB\bin\Debug\net8.0-windows\P_OtorVB.exe
+G:\sanad\sources\P_OtorVB\bin\Debug\net8.0-windows\P_OtorVB.deps.json
+G:\sanad\sources\P_OtorVB\bin\Debug\net8.0-windows\P_OtorVB.runtimeconfig.json
+G:\sanad\sources\P_OtorVB\bin\Debug\net8.0-windows\P_OtorVB.dll
+G:\sanad\sources\P_OtorVB\bin\Debug\net8.0-windows\P_OtorVB.pdb
+G:\sanad\sources\P_OtorVB\obj\Debug\net8.0-windows\P_OtorVB.dll
+G:\sanad\sources\P_OtorVB\obj\Debug\net8.0-windows\refint\P_OtorVB.dll
+G:\sanad\sources\P_OtorVB\obj\Debug\net8.0-windows\P_OtorVB.pdb
+G:\sanad\sources\P_OtorVB\obj\Debug\net8.0-windows\P_OtorVB.genruntimeconfig.cache
+G:\sanad\sources\P_OtorVB\obj\Debug\net8.0-windows\ref\P_OtorVB.dll
