@@ -24,6 +24,8 @@ Partial Class FormSheikhDashboard
     Private Sub InitializeComponent()
         Me.pnlHeader = New System.Windows.Forms.Panel()
         Me.btnLogout = New System.Windows.Forms.Button()
+        Me.picFacebook = New System.Windows.Forms.PictureBox()
+        Me.picWhatsApp = New System.Windows.Forms.PictureBox()
         Me.lblHeaderTitle = New System.Windows.Forms.Label()
         Me.pnlStats = New System.Windows.Forms.Panel()
         Me.pnlStatCerts = New System.Windows.Forms.Panel()
@@ -51,13 +53,17 @@ Partial Class FormSheikhDashboard
         Me.tabMain.SuspendLayout()
         Me.tabActive.SuspendLayout()
         CType(Me.dgvActiveOrders, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tabHistory.SuspendLayout()
         CType(Me.dgvHistoryOrders, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picFacebook, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picWhatsApp, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabHistory.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlHeader
         '
         Me.pnlHeader.BackColor = System.Drawing.Color.White
+        Me.pnlHeader.Controls.Add(Me.picWhatsApp)
+        Me.pnlHeader.Controls.Add(Me.picFacebook)
         Me.pnlHeader.Controls.Add(Me.btnLogout)
         Me.pnlHeader.Controls.Add(Me.lblHeaderTitle)
         Me.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top
@@ -65,6 +71,26 @@ Partial Class FormSheikhDashboard
         Me.pnlHeader.Name = "pnlHeader"
         Me.pnlHeader.Size = New System.Drawing.Size(984, 70)
         Me.pnlHeader.TabIndex = 0
+        '
+        'picFacebook
+        '
+        Me.picFacebook.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picFacebook.Location = New System.Drawing.Point(202, 19)
+        Me.picFacebook.Name = "picFacebook"
+        Me.picFacebook.Size = New System.Drawing.Size(32, 32)
+        Me.picFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picFacebook.TabIndex = 2
+        Me.picFacebook.TabStop = False
+        '
+        'picWhatsApp
+        '
+        Me.picWhatsApp.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picWhatsApp.Location = New System.Drawing.Point(160, 19)
+        Me.picWhatsApp.Name = "picWhatsApp"
+        Me.picWhatsApp.Size = New System.Drawing.Size(32, 32)
+        Me.picWhatsApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picWhatsApp.TabIndex = 3
+        Me.picWhatsApp.TabStop = False
         '
         'btnLogout
         '
@@ -318,8 +344,10 @@ Partial Class FormSheikhDashboard
         Me.tabMain.ResumeLayout(False)
         Me.tabActive.ResumeLayout(False)
         CType(Me.dgvActiveOrders, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tabHistory.ResumeLayout(False)
         CType(Me.dgvHistoryOrders, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picFacebook, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picWhatsApp, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tabHistory.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -344,4 +372,6 @@ Partial Class FormSheikhDashboard
     Friend WithEvents tabHistory As TabPage
     Friend WithEvents dgvHistoryOrders As DataGridView
     Friend WithEvents btnViewOrderDetails As Button
+    Friend WithEvents picFacebook As PictureBox
+    Friend WithEvents picWhatsApp As PictureBox
 End Class

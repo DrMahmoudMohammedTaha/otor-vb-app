@@ -23,6 +23,8 @@ Partial Class FormLogin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.picBanner = New System.Windows.Forms.PictureBox()
+        Me.picFacebook = New System.Windows.Forms.PictureBox()
+        Me.picWhatsApp = New System.Windows.Forms.PictureBox()
         Me.pnlLoginControls = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblSubtitle = New System.Windows.Forms.Label()
@@ -39,6 +41,8 @@ Partial Class FormLogin
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblStatus = New System.Windows.Forms.Label()
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picFacebook, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picWhatsApp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlLoginControls.SuspendLayout()
         Me.pnlAdmin.SuspendLayout()
         Me.pnlSheikh.SuspendLayout()
@@ -58,6 +62,8 @@ Partial Class FormLogin
         'pnlLoginControls
         '
         Me.pnlLoginControls.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.pnlLoginControls.Controls.Add(Me.picWhatsApp)
+        Me.pnlLoginControls.Controls.Add(Me.picFacebook)
         Me.pnlLoginControls.Controls.Add(Me.lblStatus)
         Me.pnlLoginControls.Controls.Add(Me.btnLogin)
         Me.pnlLoginControls.Controls.Add(Me.pnlAdmin)
@@ -218,6 +224,26 @@ Partial Class FormLogin
         Me.lblStatus.Text = "جاري التحقق من الاتصال بالخادم..."
         Me.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'picFacebook
+        '
+        Me.picFacebook.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picFacebook.Location = New System.Drawing.Point(222, 400)
+        Me.picFacebook.Name = "picFacebook"
+        Me.picFacebook.Size = New System.Drawing.Size(32, 32)
+        Me.picFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picFacebook.TabIndex = 9
+        Me.picFacebook.TabStop = False
+        '
+        'picWhatsApp
+        '
+        Me.picWhatsApp.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picWhatsApp.Location = New System.Drawing.Point(175, 400)
+        Me.picWhatsApp.Name = "picWhatsApp"
+        Me.picWhatsApp.Size = New System.Drawing.Size(32, 32)
+        Me.picWhatsApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picWhatsApp.TabIndex = 10
+        Me.picWhatsApp.TabStop = False
+        '
         'FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -233,6 +259,8 @@ Partial Class FormLogin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "عطور القرآن - تسجيل الدخول"
         CType(Me.picBanner, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picFacebook, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picWhatsApp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlLoginControls.ResumeLayout(False)
         Me.pnlLoginControls.PerformLayout()
         Me.pnlAdmin.ResumeLayout(False)
@@ -260,4 +288,6 @@ Partial Class FormLogin
     Friend WithEvents lblGalleryInfo As Label
     Friend WithEvents btnLogin As Button
     Friend WithEvents lblStatus As Label
+    Friend WithEvents picFacebook As PictureBox
+    Friend WithEvents picWhatsApp As PictureBox
 End Class

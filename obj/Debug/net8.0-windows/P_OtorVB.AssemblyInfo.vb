@@ -15,7 +15,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("P_OtorVB"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ade3c3012638278a167219043088d2cadd5c1c1"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("P_OtorVB"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("P_OtorVB"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

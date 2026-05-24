@@ -33,7 +33,12 @@ Partial Class FormGallery
         Me.btnCategoryCertificate = New System.Windows.Forms.Button()
         Me.btnCategoryTree = New System.Windows.Forms.Button()
         Me.btnCategoryStamp = New System.Windows.Forms.Button()
+        Me.lblContactUs = New System.Windows.Forms.Label()
+        Me.picFacebook = New System.Windows.Forms.PictureBox()
+        Me.picWhatsApp = New System.Windows.Forms.PictureBox()
         Me.flpImages = New System.Windows.Forms.FlowLayoutPanel()
+        CType(Me.picFacebook, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picWhatsApp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlHeader.SuspendLayout()
         Me.pnlSidebar.SuspendLayout()
         Me.SuspendLayout()
@@ -78,6 +83,9 @@ Partial Class FormGallery
         'pnlSidebar
         '
         Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.pnlSidebar.Controls.Add(Me.lblContactUs)
+        Me.pnlSidebar.Controls.Add(Me.picWhatsApp)
+        Me.pnlSidebar.Controls.Add(Me.picFacebook)
         Me.pnlSidebar.Controls.Add(Me.lblSidebarHeader)
         Me.pnlSidebar.Controls.Add(Me.btnCategoryEjaza)
         Me.pnlSidebar.Controls.Add(Me.btnCategoryBackground)
@@ -193,6 +201,37 @@ Partial Class FormGallery
         Me.btnCategoryStamp.Text = "أختام وإمضاءات"
         Me.btnCategoryStamp.UseVisualStyleBackColor = False
         '
+        'lblContactUs
+        '
+        Me.lblContactUs.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblContactUs.ForeColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.lblContactUs.Location = New System.Drawing.Point(10, 570)
+        Me.lblContactUs.Name = "lblContactUs"
+        Me.lblContactUs.Size = New System.Drawing.Size(200, 20)
+        Me.lblContactUs.TabIndex = 7
+        Me.lblContactUs.Text = "تواصل معنا"
+        Me.lblContactUs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'picFacebook
+        '
+        Me.picFacebook.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picFacebook.Location = New System.Drawing.Point(117, 600)
+        Me.picFacebook.Name = "picFacebook"
+        Me.picFacebook.Size = New System.Drawing.Size(32, 32)
+        Me.picFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picFacebook.TabIndex = 8
+        Me.picFacebook.TabStop = False
+        '
+        'picWhatsApp
+        '
+        Me.picWhatsApp.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picWhatsApp.Location = New System.Drawing.Point(70, 600)
+        Me.picWhatsApp.Name = "picWhatsApp"
+        Me.picWhatsApp.Size = New System.Drawing.Size(32, 32)
+        Me.picWhatsApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picWhatsApp.TabIndex = 9
+        Me.picWhatsApp.TabStop = False
+        '
         'flpImages
         '
         Me.flpImages.AutoScroll = True
@@ -217,6 +256,8 @@ Partial Class FormGallery
         Me.RightToLeftLayout = True
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "عطور القرآن - معرض النماذج والتصاميم"
+        CType(Me.picFacebook, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picWhatsApp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlHeader.ResumeLayout(False)
         Me.pnlSidebar.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -235,4 +276,7 @@ Partial Class FormGallery
     Friend WithEvents btnCategoryTree As Button
     Friend WithEvents btnCategoryStamp As Button
     Friend WithEvents flpImages As FlowLayoutPanel
+    Friend WithEvents lblContactUs As Label
+    Friend WithEvents picFacebook As PictureBox
+    Friend WithEvents picWhatsApp As PictureBox
 End Class

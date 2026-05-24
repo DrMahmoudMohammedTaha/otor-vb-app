@@ -23,6 +23,24 @@ Public Class FormGallery
         If categoryButtons.Count > 0 Then
             SelectCategory(categoryButtons(0))
         End If
+
+        ' Load Facebook and WhatsApp icons
+        Try
+            Dim fbPath As String = Path.Combine(Application.StartupPath, "facebook.png")
+            Dim waPath As String = Path.Combine(Application.StartupPath, "whatsapp.png")
+            If File.Exists(fbPath) Then
+                picFacebook.Image = Image.FromFile(fbPath)
+            End If
+            If File.Exists(waPath) Then
+                picWhatsApp.Image = Image.FromFile(waPath)
+            End If
+
+            Dim tooltip As New ToolTip()
+            tooltip.SetToolTip(picFacebook, "تابعنا على فيسبوك")
+            tooltip.SetToolTip(picWhatsApp, "تواصل معنا عبر واتساب")
+        Catch ex As Exception
+            ' Fail silently
+        End Try
     End Sub
 
     Private Sub CategoryButton_Click(sender As Object, e As EventArgs)
@@ -155,5 +173,27 @@ Public Class FormGallery
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.DialogResult = DialogResult.OK
         Me.Close()
+    End Sub
+
+    Private Sub picFacebook_Click(sender As Object, e As EventArgs) Handles picFacebook.Click
+        Try
+            Dim sInfo As New System.Diagnostics.ProcessStartInfo("https://www.facebook.com/OtorAlQuran") With {
+                .UseShellExecute = True
+            }
+            System.Diagnostics.Process.Start(sInfo)
+        Catch ex As Exception
+            MessageBox.Show("تعذر فتح رابط فيسبوك: " & ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub picWhatsApp_Click(sender As Object, e As EventArgs) Handles picWhatsApp.Click
+        Try
+            Dim sInfo As New System.Diagnostics.ProcessStartInfo("https://wa.me/201015192541") With {
+                .UseShellExecute = True
+            }
+            System.Diagnostics.Process.Start(sInfo)
+        Catch ex As Exception
+            MessageBox.Show("تعذر فتح رابط واتساب: " & ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 End Class

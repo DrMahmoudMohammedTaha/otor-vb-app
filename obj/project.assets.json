@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\sanad\\sources\\P_OtorVB\\P_OtorVB.vbproj",
+      "projectUniqueName": "G:\\sanad\\sources\\otor-vb-app\\P_OtorVB.vbproj",
       "projectName": "P_OtorVB",
-      "projectPath": "G:\\sanad\\sources\\P_OtorVB\\P_OtorVB.vbproj",
+      "projectPath": "G:\\sanad\\sources\\otor-vb-app\\P_OtorVB.vbproj",
       "packagesPath": "C:\\Users\\Mahmoud_Taha\\.nuget\\packages\\",
-      "outputPath": "G:\\sanad\\sources\\P_OtorVB\\obj\\",
+      "outputPath": "G:\\sanad\\sources\\otor-vb-app\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mahmoud_Taha\\AppData\\Roaming\\NuGet\\NuGet.Config",
