@@ -81,7 +81,7 @@ Public Class FormGallery
         flpImages.Controls.Clear()
 
         ' Resolve physical path
-        Dim basePath As String = "G:\sanad\sources\P_OtorApp\assets\gallery"
+        Dim basePath As String = "G:\sanad\sources\otor-mobile-app\assets\gallery"
         Dim targetPath = Path.Combine(basePath, folderName)
 
         If Not Directory.Exists(targetPath) Then

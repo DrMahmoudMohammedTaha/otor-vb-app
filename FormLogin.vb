@@ -11,7 +11,7 @@ Public Class FormLogin
         UpdatePanelVisibility()
 
         ' Load Banner Image
-        Dim imagePath As String = "G:\sanad\sources\P_OtorApp\assets\images\ejaza1.jpg"
+        Dim imagePath As String = "G:\sanad\sources\otor-mobile-app\assets\images\ejaza1.jpg"
         Try
             If File.Exists(imagePath) Then
                 picBanner.Image = Image.FromFile(imagePath)
